@@ -2,17 +2,16 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from "./app.component";
-import { BodyContainerComponent } from "./body-container/body-container.component";
-import { MatSidenavModule } from "@angular/material/sidenav";
 import { StoreModule } from "@ngrx/store";
 import reducers from "./store/reducers";
+import { ShellModule } from "./shell/shell.module";
 
 @NgModule({
-  declarations: [AppComponent, BodyContainerComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
+    ShellModule,
     StoreModule.forRoot(reducers),
   ],
   providers: [],
