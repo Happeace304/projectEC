@@ -1,8 +1,11 @@
-<div class='body--container'>
-    <mat-sidenav-container class="sidenav--container">
-        <mat-sidenav mode="over" #sidenav class="sidenav--left">Start</mat-sidenav>
-        <mat-sidenav-content class="sidenav--content">
+<div class='div--container'>
+    <mat-sidenav-container class="mat-sidenav--container">
+        <mat-sidenav mode="over" #sidenav class="mat-sidenav--left">
+            <left-sidebar></left-sidebar>
+        </mat-sidenav>
+        <mat-sidenav-content class="mat-sidenav--content">
             <header-container></header-container>
+            <main-container></main-container>
         </mat-sidenav-content>
     </mat-sidenav-container>
 </div>

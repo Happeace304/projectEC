@@ -1,19 +1,4 @@
-.body--container {
+.div--container {
   height: 100%;
   background-color: blanchedalmond;
-}
-
-.sidenav {
-  &--container {
-    height: 100%;
-  }
-
-  &--left {
-    background-color: brown;
-    max-width: 240px;
-    width: 100%;
-  }
-
-  &--content {
-  }
 }

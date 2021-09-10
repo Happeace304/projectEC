@@ -8,15 +8,26 @@
         <ng-container *ngTemplateOutlet="content"></ng-container>
     </button>
     
+    <!-- mat-flat-button -->
+    <button *ngSwitchCase="'mat-flat-button'" mat-flat-button #btn [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass"  (click)="onClick()">
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+    </button>
+
+    <!-- mat-fab -->
+    <button *ngSwitchCase="'mat-fab'" mat-fab #btn [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass"
+        (click)="onClick()">
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+    </button>
+
+    <!-- mat-mini-fab -->
+    <button *ngSwitchCase="'mat-mini-fab'" mat-mini-fab #btn [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass"
+        (click)="onClick()">
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+    </button>
+
     <!-- mat-button -->
-    <button *ngSwitchDefault mat-button #btn [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass"  (click)="onClick()">
+    <button *ngSwitchDefault mat-button #btn [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass"
+        (click)="onClick()">
         <ng-container *ngTemplateOutlet="content"></ng-container>
     </button>
 </ng-container>
-
-
-<!-- mat-icon-button
-mat-button
-mat-flat-button
-mat-fab
-mat-mini-fab -->

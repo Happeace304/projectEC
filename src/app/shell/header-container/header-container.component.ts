@@ -1,8 +1,7 @@
 import { Component } from "@angular/core";
 import { Store } from "@ngrx/store";
-import { Observable } from "rxjs";
 import { BaseComponent } from "src/app/base/base-component";
-import ButtonConfig from "src/app/controls/viewModels/buttonConfig";
+import { ButtonConfig } from "src/app/controls/viewModels/buttonConfig";
 import { toggle } from "src/app/store/sidenav/sidenav.actions";
 
 @Component({
@@ -22,9 +21,8 @@ export class HeaderContainerComponent extends BaseComponent {
   initMenuConfig() {
     this.menuConfig = {
       type: "mat-icon-button",
-      color: "accent",
-      ariaLabel: "Label",
-      cssClass: "button",
+      color: "button--menu",
+      cssClass: "bottom-shadow",
       onButtonClick: () => this.store.dispatch(toggle()),
     };
   }

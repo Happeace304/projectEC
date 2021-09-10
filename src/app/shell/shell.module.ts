@@ -5,9 +5,11 @@ import { MatIconModule } from "@angular/material/icon";
 import { HeaderContainerComponent } from "./header-container/header-container.component";
 import { BodyContainerComponent } from "./body-container/body-container.component";
 import { ControlsModule } from "../controls/controls.module";
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MainContainerComponent } from './main-container/main-container.component';
 
 @NgModule({
-  declarations: [HeaderContainerComponent, BodyContainerComponent],
+  declarations: [HeaderContainerComponent, BodyContainerComponent, SidebarComponent, MainContainerComponent],
   imports: [CommonModule, MatSidenavModule, ControlsModule, MatIconModule],
   providers: [],
   exports: [BodyContainerComponent],

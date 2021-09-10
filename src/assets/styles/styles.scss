@@ -1,0 +1,36 @@
+@import "common";
+
+/* You can add global styles to this file, and also import other style files */
+$base-color: rgb(4, 119, 233);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat {
+  &-button {
+    &--menu {
+      color: white;
+      background-color: $base-color;
+    }
+  }
+
+  &-sidenav {
+    &--container {
+      height: 100%;
+    }
+
+    &--left {
+      background-color: $base-color;
+      width: 240px;
+    }
+
+    // &--content {
+    // }
+  }
+}
