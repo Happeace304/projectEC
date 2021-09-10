@@ -4,12 +4,12 @@
 
 <ng-container [ngSwitch]="type">
     <!-- mat-icon-button -->
-    <button *ngSwitchCase="'mat-icon-button'" mat-icon-button [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass">
+    <button *ngSwitchCase="'mat-icon-button'" mat-icon-button #btn [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass" (click)="onClick()">
         <ng-container *ngTemplateOutlet="content"></ng-container>
     </button>
     
     <!-- mat-button -->
-    <button *ngSwitchDefault mat-button [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass">
+    <button *ngSwitchDefault mat-button #btn [color]="color" [attr.aria-label]="ariaLabel" [ngClass]="cssClass"  (click)="onClick()">
         <ng-container *ngTemplateOutlet="content"></ng-container>
     </button>
 </ng-container>

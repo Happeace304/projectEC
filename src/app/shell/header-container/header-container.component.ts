@@ -1,6 +1,9 @@
 import { Component } from "@angular/core";
+import { Store } from "@ngrx/store";
+import { Observable } from "rxjs";
 import { BaseComponent } from "src/app/base/base-component";
 import ButtonConfig from "src/app/controls/viewModels/buttonConfig";
+import { toggle } from "src/app/store/sidenav/sidenav.actions";
 
 @Component({
   selector: "header-container",
@@ -10,7 +13,7 @@ import ButtonConfig from "src/app/controls/viewModels/buttonConfig";
 export class HeaderContainerComponent extends BaseComponent {
   menuConfig: ButtonConfig;
 
-  constructor() {
+  constructor(private store: Store<{ sidenav: boolean }>) {
     super();
 
     this.initMenuConfig();
@@ -21,7 +24,8 @@ export class HeaderContainerComponent extends BaseComponent {
       type: "mat-icon-button",
       color: "accent",
       ariaLabel: "Label",
-      cssClass: "",
+      cssClass: "button",
+      onButtonClick: () => this.store.dispatch(toggle()),
     };
   }
 }

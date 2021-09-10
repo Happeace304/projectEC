@@ -1,5 +1,5 @@
-<header>THIS IS HEADER
-    <icon-button [config]="menuConfig">
+<header>
+    <base-button [config]="menuConfig" (onButtonClick)="menuConfig.onButtonClick()">
         <mat-icon>menu</mat-icon>
-    </icon-button>
+    </base-button>
 </header>

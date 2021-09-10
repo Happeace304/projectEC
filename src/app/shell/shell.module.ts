@@ -9,6 +9,7 @@ import { ControlsModule } from "../controls/controls.module";
 @NgModule({
   declarations: [HeaderContainerComponent, BodyContainerComponent],
   imports: [CommonModule, MatSidenavModule, ControlsModule, MatIconModule],
+  providers: [],
   exports: [BodyContainerComponent],
 })
 export class ShellModule {}

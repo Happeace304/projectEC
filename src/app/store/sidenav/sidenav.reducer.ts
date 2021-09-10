@@ -1,13 +1,11 @@
 import { createReducer, on } from "@ngrx/store";
-import { click } from "./sidenav.actions";
+import { toggle } from "./sidenav.actions";
 
-export const initialState = { value: true };
+export const initialState = true;
 
 const _sidenavReducer = createReducer(
   initialState,
-  on(click, (state, { value }: { value: boolean }) => {
-    return { ...state, value: !value };
-  })
+  on(toggle, (state) => !state)
 );
 
 export function sidenavReducer(state, action) {

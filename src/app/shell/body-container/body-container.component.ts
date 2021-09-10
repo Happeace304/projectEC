@@ -11,7 +11,6 @@ import { BaseComponent } from "../../base/base-component";
   styleUrls: ["./body-container.component.scss"],
 })
 export class BodyContainerComponent extends BaseComponent {
-  @ViewChild("sidenavToggler") sidenavToggler: ElementRef<any>;
   @ViewChild("sidenav") sidenav: MatSidenav;
 
   private sidenav$: Observable<any>;
@@ -26,18 +25,12 @@ export class BodyContainerComponent extends BaseComponent {
     this.sidenav$
       .pipe(
         takeUntil(this.destroy$),
-        tap(({ value }) => {
-          this.togglesidenav(value);
-        })
+        tap(() => this.togglesidenav())
       )
       .subscribe();
   }
 
-  private togglesidenav(value): void {
-    if (value) {
-      this.sidenav?.open();
-    } else {
-      this.sidenav?.close();
-    }
+  private togglesidenav(): void {
+    this.sidenav?.open();
   }
 }

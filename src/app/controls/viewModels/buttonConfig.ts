@@ -3,4 +3,5 @@ export default interface ButtonConfig {
   ariaLabel: string;
   type: string;
   cssClass: string;
+  onButtonClick: Function;
 }
