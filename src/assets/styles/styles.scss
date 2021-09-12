@@ -1,5 +1,6 @@
 @import "common", "variables";
 @import "~@angular/material/theming";
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
 @include mat-core();
 $app-primary: mat-palette($mat-indigo);
 $app-accent: mat-palette($mat-amber, A200, A100, A400);

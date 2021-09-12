@@ -1,0 +1,33 @@
+[nz-carousel-content] {
+  text-align: center;
+  line-height: 160px;
+  background: #364d79;
+  color: #fff;
+  overflow: hidden;
+}
+
+.img--container {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel {
+  &--container {
+    position: relative;
+    height: 100%;
+  }
+
+  &--label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 16px;
+    width: 32px;
+    z-index: 1;
+    border-radius: 2px;
+
+    &__red {
+      background-color: red;
+    }
+  }
+}
