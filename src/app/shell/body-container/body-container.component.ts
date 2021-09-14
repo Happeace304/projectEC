@@ -25,12 +25,12 @@ export class BodyContainerComponent extends BaseComponent {
     this.sidenav$
       .pipe(
         takeUntil(this.destroy$),
-        tap(() => this.togglesidenav())
+        tap((doOpen: boolean) => this.togglesidenav(doOpen))
       )
       .subscribe();
   }
 
-  private togglesidenav(): void {
-    this.sidenav?.open();
+  private togglesidenav(doOpen: boolean): void {
+    doOpen ? this.sidenav?.open() : this.sidenav?.close();
   }
 }

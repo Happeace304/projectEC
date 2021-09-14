@@ -5,23 +5,3 @@
 .bottom-shadow {
   box-shadow: 1px 1px 5px #888888;
 }
-
-//margin
-.mg {
-  //bottom
-  &-btm {
-    &__16px {
-      margin-bottom: 16px;
-    }
-  }
-}
-
-//padding
-.pd {
-  //horizon
-  &-hrz {
-    &__16px {
-      padding: 0 16px;
-    }
-  }
-}

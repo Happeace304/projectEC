@@ -5,6 +5,7 @@ import { AppComponent } from "./app.component";
 import { StoreModule } from "@ngrx/store";
 import reducers from "./store/reducers";
 import { ShellModule } from "./shell/shell.module";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +14,7 @@ import { ShellModule } from "./shell/shell.module";
     BrowserAnimationsModule,
     ShellModule,
     StoreModule.forRoot(reducers),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

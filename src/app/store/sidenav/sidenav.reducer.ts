@@ -1,7 +1,7 @@
 import { createReducer, on } from "@ngrx/store";
 import { toggle } from "./sidenav.actions";
 
-export const initialState = true;
+export const initialState = false;
 
 const _sidenavReducer = createReducer(
   initialState,
