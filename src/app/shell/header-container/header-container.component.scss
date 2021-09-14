@@ -7,11 +7,7 @@
   &--home-img {
     background: url("^assets/icons/build-icon-home.png") no-repeat center center;
     background-size: 100%;
-    height: calc(100% - 2rem);
     width: 180px;
     max-width: 30vw;
-    position: absolute;
-    top: 1rem;
-    left: 0;
   }
 }
