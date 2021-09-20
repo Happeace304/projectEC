@@ -6,14 +6,13 @@ import { CardComponent } from "./card/card.component";
 
 //material design
 import { MatButtonModule } from "@angular/material/button";
-import { MatCardModule } from "@angular/material/card";
 
 //ant design
 import { NzCarouselModule } from "ng-zorro-antd/carousel";
 
 @NgModule({
   declarations: [BaseButtonComponent, CarouselComponent, CardComponent],
-  imports: [CommonModule, MatButtonModule, NzCarouselModule, MatCardModule],
+  imports: [CommonModule, MatButtonModule, NzCarouselModule],
   exports: [BaseButtonComponent, CarouselComponent, CardComponent],
 })
 export class ControlsModule {}
