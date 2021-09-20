@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { CarouselConfig, CarouselData } from "../viewModels/carousel";
 
 @Component({
   selector: "carousel",
@@ -6,8 +7,8 @@ import { Component, Input, OnInit } from "@angular/core";
   styleUrls: ["./carousel.component.scss"],
 })
 export class CarouselComponent implements OnInit {
-  @Input("config") config;
-  @Input("data") data;
+  @Input("config") config: CarouselConfig;
+  @Input("data") data: CarouselData;
 
   constructor() {}
 

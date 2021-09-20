@@ -1,0 +1,8 @@
+.banner {
+  height: 20vh;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 30vh;
+  }
+}

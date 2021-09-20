@@ -13,7 +13,7 @@ import { toggle } from "src/app/store/sidenav/sidenav.actions";
 export class HeaderContainerComponent extends BaseComponent {
   menuConfig: ButtonConfig;
   menu$;
-  constructor(private store: Store<{ sidenav: boolean; menu: menuItem[] }>) {
+  constructor(private store: Store<{ menu: menuItem[] }>) {
     super();
 
     this.initMenuConfig();

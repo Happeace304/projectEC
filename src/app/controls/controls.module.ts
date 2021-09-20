@@ -4,7 +4,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { BaseButtonComponent } from "./button/button.component";
 import { CarouselComponent } from "./carousel/carousel.component";
 import { NzCarouselModule } from "ng-zorro-antd/carousel";
-// import { NzRadioModule } from "ng-zorro-antd/radio";
 
 @NgModule({
   declarations: [BaseButtonComponent, CarouselComponent],
