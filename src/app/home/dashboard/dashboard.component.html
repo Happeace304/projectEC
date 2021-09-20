@@ -1,3 +1,11 @@
-<div class="banner">
-    <carousel [data]="data"></carousel>
+<div class="banner pb-3">
+    <carousel [data]="bannerData"></carousel>
+</div>
+
+<div class="col-12 pb-3">     
+    <div class="row"> 
+        <div class="col-12 col-md-3" *ngFor="let sellItem of items$ |async; let index">
+            <card></card>
+        </div>
+    </div>
 </div>

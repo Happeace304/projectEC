@@ -32,6 +32,9 @@ body {
   &-sidenav {
     &--container {
       height: 100%;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     &--left {
@@ -43,3 +46,4 @@ body {
     // }
   }
 }
+

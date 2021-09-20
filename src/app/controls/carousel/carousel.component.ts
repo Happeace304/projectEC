@@ -17,4 +17,8 @@ export class CarouselComponent implements OnInit {
   get dotPosition(): string {
     return this.config?.dotPosition || "bottom";
   }
+
+  get autoplay(): boolean {
+    return !!this.config?.autoplay;
+  }
 }
