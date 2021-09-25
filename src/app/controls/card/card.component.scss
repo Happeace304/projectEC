@@ -1,16 +1,22 @@
 .card {
-  &--container {
+  &__container {
     height: 400px;
     margin-top: 1rem;
     border: 1px solid #f0f0f0;
-
+    display: flex;
+    flex-direction: column;
     &:hover {
       cursor: pointer;
       box-shadow: 1px 1px 5px #888888;
     }
   }
-  &--carousel {
-    height: 66%;
+
+  &__content {
+    flex: 1;
+  }
+
+  &__carousel {
+    flex: 2;
     margin: -1px -1px 0 -1px;
   }
 }
